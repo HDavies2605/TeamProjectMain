@@ -1,2 +1,2 @@
 # TeamProjectMain
-The main repository for the 
+The main repository for the team project
