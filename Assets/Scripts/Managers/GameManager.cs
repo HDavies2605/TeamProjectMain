@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Data;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -28,38 +30,46 @@ public class GameManager : MonoBehaviour
             playerData = new PlayerData();
         }
     }
-    
-    [System.Serializable]
-    public class PlayerData
-    {
-        // Basic Info
-        public string playerName = "Hero";
-        public int level = 1;
-        public int experience = 0;
+        
+    [Header("Enemy System")]
+    [Tooltip("All enemy types in the game")]
+    public List<EnemyDataSO> availableEnemies;
+        
+    [Header("Item System")]
+    [Tooltip("All available items in the game")]
+    public List<ItemDataSO> availableItems;
+}
 
-        // HP and MP
-        public int currentHealth = 100;
-        public int maxHealth = 100;
-        public int currentMana = 30;
-        public int maxMana = 30;
+[System.Serializable]
+public class PlayerData
+{
+    // Basic Info
+    public string playerName = "Hero";
+    public int level = 1;
+    public int experience = 0;
 
-        // Base Stats
-        public int baseMaxHealth = 100;
-        public int baseMaxMana = 30;
-        public int baseAttack = 10;
-        public int baseDefense = 5;
-        public int baseSpeed = 8;
+    // HP and MP
+    public int currentHealth = 100;
+    public int maxHealth = 100;
+    public int currentMana = 30;
+    public int maxMana = 30;
 
-        // Combat Stats
-        public int attack = 10;
-        public int defense = 5;
-        public int speed = 8;
+    // Base Stats
+    public int baseMaxHealth = 100;
+    public int baseMaxMana = 30;
+    public int baseAttack = 10;
+    public int baseDefense = 5;
+    public int baseSpeed = 8;
 
-        // Skill Points
-        public int availableSkillPoints = 0;
+    // Combat Stats
+    public int attack = 10;
+    public int defense = 5;
+    public int speed = 8;
 
-        // Returning to overworld
-        public string lastOverworldScene = "Overworld";
-        public Vector2 lastPosition;
-    }
+    // Skill Points
+    public int availableSkillPoints = 0;
+
+    // Returning to overworld
+    public string lastOverworldScene = "Overworld";
+    public Vector2 lastPosition;
 }
