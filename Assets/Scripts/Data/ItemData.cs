@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Data
 {
     [System.Serializable]
-    public class ItemData : MonoBehaviour
+    public class ItemData
     {
         public string itemName;
         public string description;
