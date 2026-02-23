@@ -30,6 +30,24 @@ public class InventoryController : MonoBehaviour
         }
     }
 
+    public bool AddItem(GameObject itemPrefab)
+    {
+        //for every slot inside inventory page (inventory)   
+        foreach(Transform slotTransform in inventoryPage.transform)
+        {
+            InventorySlot slot = slotTransform.GetComponent<InventorySlot>();      
+            if (slot != null && slot.currentItem == null)     //do we have slot and is there no item in the slot?
+            {
+                GameObject newItem = Instantiate(itemPrefab, slotTransform);
+                newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                slot.currentItem = newItem;
+                return true;
+            }
+        }
+        Debug.Log("Inventory is full!");
+        return false;
+    }
+
     // Update is called once per frame
     void Update()
     {
