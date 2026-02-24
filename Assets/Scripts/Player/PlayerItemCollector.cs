@@ -11,7 +11,7 @@ public class PlayerItemCollector : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        inventoryController = FindObjectOfType<InventoryController>();
+        inventoryController = FindAnyObjectByType<InventoryController>();
         if (inventoryController == null)
         {
             Debug.LogError("No InventoryController found in the scene!");
