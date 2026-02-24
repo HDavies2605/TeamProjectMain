@@ -1,0 +1,1261 @@
+fileFormatVersion: 2
+guid: 8339edf4cbdad7e468fb1ac5d4efe658
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7259935588842783699
+    second: tiles-grass lightest-32x32_0
+  - first:
+      213: -5151838223353970847
+    second: tiles-grass lightest-32x32_1
+  - first:
+      213: -451335723456724714
+    second: tiles-grass lightest-32x32_2
+  - first:
+      213: 8042182318308141575
+    second: tiles-grass lightest-32x32_3
+  - first:
+      213: 5886009151771109199
+    second: tiles-grass lightest-32x32_4
+  - first:
+      213: -1450724785685261094
+    second: tiles-grass lightest-32x32_5
+  - first:
+      213: 8037073273887677736
+    second: tiles-grass lightest-32x32_6
+  - first:
+      213: -6520654882923895331
+    second: tiles-grass lightest-32x32_7
+  - first:
+      213: -2361348551693517268
+    second: tiles-grass lightest-32x32_8
+  - first:
+      213: -4179047888752870887
+    second: tiles-grass lightest-32x32_9
+  - first:
+      213: -7383539160844213083
+    second: tiles-grass lightest-32x32_10
+  - first:
+      213: -5168991828551166131
+    second: tiles-grass lightest-32x32_11
+  - first:
+      213: -6621761380597659566
+    second: tiles-grass lightest-32x32_12
+  - first:
+      213: 8166502040248166573
+    second: tiles-grass lightest-32x32_13
+  - first:
+      213: -2193553633332710077
+    second: tiles-grass lightest-32x32_14
+  - first:
+      213: -7998508939423555529
+    second: tiles-grass lightest-32x32_15
+  - first:
+      213: -8981211578827049552
+    second: tiles-grass lightest-32x32_16
+  - first:
+      213: -1782477495877048194
+    second: tiles-grass lightest-32x32_17
+  - first:
+      213: -5256335386535007523
+    second: tiles-grass lightest-32x32_18
+  - first:
+      213: -4045921970176453301
+    second: tiles-grass lightest-32x32_19
+  - first:
+      213: 4872339453698613031
+    second: tiles-grass lightest-32x32_20
+  - first:
+      213: -2930198363165402991
+    second: tiles-grass lightest-32x32_21
+  - first:
+      213: -6410585173350652819
+    second: tiles-grass lightest-32x32_22
+  - first:
+      213: -6889585710781217253
+    second: tiles-grass lightest-32x32_23
+  - first:
+      213: 4550328693461533298
+    second: tiles-grass lightest-32x32_24
+  - first:
+      213: 7589768936784091302
+    second: tiles-grass lightest-32x32_25
+  - first:
+      213: 5882657202621322391
+    second: tiles-grass lightest-32x32_26
+  - first:
+      213: -8572012847376527126
+    second: tiles-grass lightest-32x32_27
+  - first:
+      213: -1793399629029365258
+    second: tiles-grass lightest-32x32_28
+  - first:
+      213: -1289722099176308323
+    second: tiles-grass lightest-32x32_29
+  - first:
+      213: -200240606215478682
+    second: tiles-grass lightest-32x32_30
+  - first:
+      213: 414962395843928827
+    second: tiles-grass lightest-32x32_31
+  - first:
+      213: -3923121846632228648
+    second: tiles-grass lightest-32x32_32
+  - first:
+      213: -4177460898019159490
+    second: tiles-grass lightest-32x32_33
+  - first:
+      213: 1858989399575680300
+    second: tiles-grass lightest-32x32_34
+  - first:
+      213: 2310235418479033372
+    second: tiles-grass lightest-32x32_35
+  - first:
+      213: 8729231869267133937
+    second: tiles-grass lightest-32x32_36
+  - first:
+      213: -2146640073158599874
+    second: tiles-grass lightest-32x32_37
+  - first:
+      213: 3631248316357775470
+    second: tiles-grass lightest-32x32_38
+  - first:
+      213: 5957591211157770997
+    second: tiles-grass lightest-32x32_39
+  - first:
+      213: 702076359169478489
+    second: tiles-grass lightest-32x32_40
+  - first:
+      213: -9210209702073723662
+    second: tiles-grass lightest-32x32_41
+  - first:
+      213: 2517623243775513593
+    second: tiles-grass lightest-32x32_42
+  - first:
+      213: -2894512826409678833
+    second: tiles-grass lightest-32x32_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 325
+        width: 225
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c3fc6fb078f3b90800000000000000
+      internalID: -7259935588842783699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 159
+        width: 354
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ff4b47e6ef088b0800000000000000
+      internalID: -5151838223353970847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_2
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 264
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6110be00d888cb9f0800000000000000
+      internalID: -451335723456724714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_3
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 287
+        width: 193
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a2fad85329b9f60800000000000000
+      internalID: 8042182318308141575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 293
+        width: 129
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47e30c532e4fa150800000000000000
+      internalID: 5886009151771109199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_5
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 159
+        width: 68
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad410626e7dfddbe0800000000000000
+      internalID: -1450724785685261094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_6
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 264
+        width: 65
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d5cd37f8b698f60800000000000000
+      internalID: 8037073273887677736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 281
+        width: 95
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5a7609eeaf185a0800000000000000
+      internalID: -6520654882923895331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 281
+        width: 31
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ebc61d00eca3fd0800000000000000
+      internalID: -2361348551693517268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_9
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 249
+        width: 130
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91af983361a0106c0800000000000000
+      internalID: -4179047888752870887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 129
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a4e1bcb046688990800000000000000
+      internalID: -7383539160844213083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_11
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 181
+        width: 79
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d479f44815d0448b0800000000000000
+      internalID: -5168991828551166131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_12
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 175
+        width: 16
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2588312ab17ca14a0800000000000000
+      internalID: -6621761380597659566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 367
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8ae7e665e355170800000000000000
+      internalID: 8166502040248166573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_14
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 168
+        width: 70
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345bf69a79eee81e0800000000000000
+      internalID: -2193553633332710077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_15
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 132
+        width: 74
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7306fdc5f769ff090800000000000000
+      internalID: -7998508939423555529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_16
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 133
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5736f47a35c5380800000000000000
+      internalID: -8981211578827049552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_17
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 124
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78ee16592e5347e0800000000000000
+      internalID: -1782477495877048194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_18
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 136
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddae341b0debd07b0800000000000000
+      internalID: -5256335386535007523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_19
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 128
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b451fa2876ff9d7c0800000000000000
+      internalID: -4045921970176453301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_20
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 132
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f93da1be60e9340800000000000000
+      internalID: 4872339453698613031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_21
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 148
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19858121d18d557d0800000000000000
+      internalID: -2930198363165402991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_22
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 112
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d646c04efb60907a0800000000000000
+      internalID: -6410585173350652819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_23
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 112
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1647437c464360a0800000000000000
+      internalID: -6889585710781217253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_24
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 92
+        width: 65
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272ca0986d3062f30800000000000000
+      internalID: 4550328693461533298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_25
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 121
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a85f4cb2a6445960800000000000000
+      internalID: 7589768936784091302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_26
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 68
+        width: 68
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79413a1ee8563a150800000000000000
+      internalID: 5882657202621322391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_27
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 4
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae099065bb71a0980800000000000000
+      internalID: -8572012847376527126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_28
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 105
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9236b0a809c17e0800000000000000
+      internalID: -1793399629029365258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_29
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 94
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9100a3859cf91ee0800000000000000
+      internalID: -1289722099176308323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_30
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 85
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662eae4ca3a983df0800000000000000
+      internalID: -200240606215478682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_31
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 105
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf22c67b91e32c500800000000000000
+      internalID: 414962395843928827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_32
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 89
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d859e057754e89c0800000000000000
+      internalID: -3923121846632228648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_33
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 80
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32db76427da606c0800000000000000
+      internalID: -4177460898019159490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_34
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 83
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25dce272057cc910800000000000000
+      internalID: 1858989399575680300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_35
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 70
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1cf7f97fda9f0020800000000000000
+      internalID: 2310235418479033372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_36
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 0
+        width: 146
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5cfa9b226742970800000000000000
+      internalID: 8729231869267133937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_37
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 80
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b53c21a3a9532e0800000000000000
+      internalID: -2146640073158599874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_38
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 8
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e609db3ca19c46230800000000000000
+      internalID: 3631248316357775470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_39
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 57
+        width: 48
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f25c0254ad9da250800000000000000
+      internalID: 5957591211157770997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_40
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 28
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f0f799ab64eb900800000000000000
+      internalID: 702076359169478489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_41
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 28
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f41a01e213ce2080800000000000000
+      internalID: -9210209702073723662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_42
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f39183500560f220800000000000000
+      internalID: 2517623243775513593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass lightest-32x32_43
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 0
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f080a009bef94d7d0800000000000000
+      internalID: -2894512826409678833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tiles-grass lightest-32x32_0: -7259935588842783699
+      tiles-grass lightest-32x32_1: -5151838223353970847
+      tiles-grass lightest-32x32_10: -7383539160844213083
+      tiles-grass lightest-32x32_11: -5168991828551166131
+      tiles-grass lightest-32x32_12: -6621761380597659566
+      tiles-grass lightest-32x32_13: 8166502040248166573
+      tiles-grass lightest-32x32_14: -2193553633332710077
+      tiles-grass lightest-32x32_15: -7998508939423555529
+      tiles-grass lightest-32x32_16: -8981211578827049552
+      tiles-grass lightest-32x32_17: -1782477495877048194
+      tiles-grass lightest-32x32_18: -5256335386535007523
+      tiles-grass lightest-32x32_19: -4045921970176453301
+      tiles-grass lightest-32x32_2: -451335723456724714
+      tiles-grass lightest-32x32_20: 4872339453698613031
+      tiles-grass lightest-32x32_21: -2930198363165402991
+      tiles-grass lightest-32x32_22: -6410585173350652819
+      tiles-grass lightest-32x32_23: -6889585710781217253
+      tiles-grass lightest-32x32_24: 4550328693461533298
+      tiles-grass lightest-32x32_25: 7589768936784091302
+      tiles-grass lightest-32x32_26: 5882657202621322391
+      tiles-grass lightest-32x32_27: -8572012847376527126
+      tiles-grass lightest-32x32_28: -1793399629029365258
+      tiles-grass lightest-32x32_29: -1289722099176308323
+      tiles-grass lightest-32x32_3: 8042182318308141575
+      tiles-grass lightest-32x32_30: -200240606215478682
+      tiles-grass lightest-32x32_31: 414962395843928827
+      tiles-grass lightest-32x32_32: -3923121846632228648
+      tiles-grass lightest-32x32_33: -4177460898019159490
+      tiles-grass lightest-32x32_34: 1858989399575680300
+      tiles-grass lightest-32x32_35: 2310235418479033372
+      tiles-grass lightest-32x32_36: 8729231869267133937
+      tiles-grass lightest-32x32_37: -2146640073158599874
+      tiles-grass lightest-32x32_38: 3631248316357775470
+      tiles-grass lightest-32x32_39: 5957591211157770997
+      tiles-grass lightest-32x32_4: 5886009151771109199
+      tiles-grass lightest-32x32_40: 702076359169478489
+      tiles-grass lightest-32x32_41: -9210209702073723662
+      tiles-grass lightest-32x32_42: 2517623243775513593
+      tiles-grass lightest-32x32_43: -2894512826409678833
+      tiles-grass lightest-32x32_5: -1450724785685261094
+      tiles-grass lightest-32x32_6: 8037073273887677736
+      tiles-grass lightest-32x32_7: -6520654882923895331
+      tiles-grass lightest-32x32_8: -2361348551693517268
+      tiles-grass lightest-32x32_9: -4179047888752870887
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
