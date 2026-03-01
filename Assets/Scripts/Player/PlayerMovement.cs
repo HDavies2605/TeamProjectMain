@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private float deceleration = 35f;
 
 
+    private Animator animator;
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();  //get animator from child object (PlayerSprite)
     }
 
     void FixedUpdate()
@@ -47,12 +49,21 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
+        animator.SetBool("isWalking", true);
+
         if (context.canceled)
         {
+            //if input is released, stop moving and set last input for idle animation
+            animator.SetBool("isWalking", false);
+            animator.SetFloat("LastInputX", moveInput.x);
+            animator.SetFloat("LastInputY", moveInput.y);
+
             moveInput = Vector2.zero;
             return;
         }
 
         moveInput = context.ReadValue<Vector2>().normalized;
+        animator.SetFloat("InputX", moveInput.x);
+        animator.SetFloat("InputY", moveInput.y);
     }
 }
