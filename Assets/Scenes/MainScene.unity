@@ -659,7 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a40225eefa9c79f45ba27b451c875532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testEnemy: {fileID: 0}
+  testEnemy: {fileID: 11400000, guid: 25722ed6180e8204c809856eff39dbc5, type: 2}
 --- !u!4 &1242175540539768870
 Transform:
   m_ObjectHideFlags: 0
@@ -740,7 +740,10 @@ MonoBehaviour:
     lastOverworldScene: MainScene
     lastPosition: {x: 0, y: 0}
   availableEnemies:
-  - {fileID: 11400000, guid: d318d462b4b971f4a8a6db1bd6df5833, type: 2}
+  - {fileID: 11400000, guid: 25722ed6180e8204c809856eff39dbc5, type: 2}
+  - {fileID: 11400000, guid: d4eb32e32bb0af04ca2c8a039cbc4930, type: 2}
+  - {fileID: 11400000, guid: 4986262c3834902419e970a2f3b5f357, type: 2}
+  - {fileID: 11400000, guid: a23508d4fdce1444e937ac8df164ca16, type: 2}
   availableItems: []
 --- !u!114 &6812438467359406033
 MonoBehaviour:
@@ -774,7 +777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
