@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ececc8eff2093c1498fb1f529c9ecdcb, type: 3}
-  m_Name: BIg_Bin
+  m_Name: Slime
   m_EditorClassIdentifier: 
-  enemyName: Enemy
-  maxHealth: 50
+  enemyName: Slime
+  maxHealth: 25
   attack: 8
   defense: 3
   speed: 5
   experienceReward: 50
   goldReward: 25
-  enemySprite: {fileID: 7595986285605212588, guid: 16424b6f4fd46304c920b2f7d6ba974e, type: 3}
-  animatorController: {fileID: 0}
+  enemySprite: {fileID: -7010182171088023693, guid: 516663c98890b7f4a942f7832698fbac, type: 3}
+  animatorController: {fileID: 22100000, guid: 9508f1bf2145bd64c9a5a53ea2c410e8, type: 2}
   displayScale: 5
   specialAttackChance: 30
   specialAttackDamage: 15
