@@ -92,21 +92,25 @@ namespace Player
         /// </summary>
         private void TriggerBattle()
         {
-            if (possibleEnemies == null || possibleEnemies.Length == 0)
-            {
-                return;
-            }
-    
+            if (possibleEnemies == null || possibleEnemies.Length == 0) return;
+
             EnemyDataSO randomEnemy = GetWeightedRandomEnemy();
-            
-            GameManager.Instance.playerData.lastOverworldScene = SceneManager.GetActiveScene().name;
-    
             EnemyData enemy = randomEnemy.ToEnemyData();
-            
+
+            GameManager.Instance.playerData.lastOverworldScene = SceneManager.GetActiveScene().name;
+
             PlayerPrefs.SetString("CurrentEnemyID", randomEnemy.enemyName);
-    
             PlayerPrefs.SetString("CurrentEnemyName", enemy.enemyName);
-    
+            // Add the missing ones:
+            PlayerPrefs.SetInt("CurrentEnemyHealth", enemy.maxHealth);
+            PlayerPrefs.SetInt("CurrentEnemyAttack", enemy.attack);
+            PlayerPrefs.SetInt("CurrentEnemyDefense", enemy.defense);
+            PlayerPrefs.SetInt("CurrentEnemySpeed", enemy.speed);
+            PlayerPrefs.SetInt("CurrentEnemyXP", enemy.experienceReward);
+            PlayerPrefs.SetInt("CurrentEnemySpecialChance", enemy.specialAttackChance);
+            PlayerPrefs.SetInt("CurrentEnemySpecialDamage", enemy.specialAttackDamage);
+            PlayerPrefs.SetString("CurrentEnemySpecialName", enemy.specialAttackName);
+
             SceneManager.LoadScene(battleSceneName);
         }
     

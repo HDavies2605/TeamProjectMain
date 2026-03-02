@@ -92,6 +92,7 @@ namespace Managers
                     enemyAnimator.runtimeAnimatorController = enemySO.animatorController;
                 }
                 
+                
                 // Start the battle!
                 StartBattle(enemy);
                 
@@ -169,17 +170,22 @@ namespace Managers
         public void PlayerAttack()
         {
             if (currentState != BattleState.PlayerTurn || !battleActive)
+            {
+                Debug.Log("Attack blocked by state check!");
                 return;
-    
+            }
+
             PlayerData player = GameManager.Instance.playerData;
+            Debug.Log($"Player attack stat: {player.attack}");
     
             int damage = CalculatePlayerDamage(player.attack);
             
             int actualDamage = currentEnemy.TakeDamage(damage);
+            Debug.Log($"Dealt {actualDamage} damage. Enemy HP: {currentEnemy.currentHealth}/{currentEnemy.maxHealth}");
     
             if (BattleUI.Instance != null)
             {
-                BattleUI.Instance.AddLogMessage($"You attack for {actualDamage} damage!");
+                BattleUI.Instance.AddLogMessage($"You attack for {actualDamage} damage");
                 BattleUI.Instance.UpdateEnemyUI();
             }
     
@@ -190,10 +196,12 @@ namespace Managers
     
             if (currentEnemy.IsDefeated())
             {
+                Debug.Log("Enemy defeated!");
                 Victory();
             }
             else
             {
+                Debug.Log("Ending player turn...");
                 EndPlayerTurn();
             }
         }

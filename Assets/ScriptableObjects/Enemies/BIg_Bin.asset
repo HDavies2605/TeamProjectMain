@@ -19,7 +19,7 @@ MonoBehaviour:
   speed: 5
   experienceReward: 50
   goldReward: 25
-  enemySprite: {fileID: 0}
+  enemySprite: {fileID: 7595986285605212588, guid: 16424b6f4fd46304c920b2f7d6ba974e, type: 3}
   animatorController: {fileID: 0}
   displayScale: 5
   specialAttackChance: 30

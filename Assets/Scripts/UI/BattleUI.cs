@@ -54,13 +54,7 @@ public class BattleUI : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    /// <summary>
-    /// Set up button listeners
-    /// </summary>
-    private void Start()
-    {
+        
         // Hook up button click events
         if (attackButton != null)
             attackButton.onClick.AddListener(OnAttackClicked);
@@ -166,9 +160,14 @@ public class BattleUI : MonoBehaviour
     /// </summary>
     private void OnAttackClicked()
     {
+        Debug.Log("Attack button clicked!");
         if (BattleManager.Instance != null)
         {
             BattleManager.Instance.PlayerAttack();
+        }
+        else
+        {
+            Debug.LogError("BattleManager.Instance is null!");
         }
     }
 
