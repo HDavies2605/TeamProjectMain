@@ -78,11 +78,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 16.979637, y: 10.96928}
-      - {x: -20.570963, y: 10.733514}
-      - {x: -20.936039, y: -11.370081}
-      - {x: 19.752476, y: -11.961862}
-      - {x: 19.296349, y: -0.1917215}
+    - - {x: 9.607468, y: 14.049086}
+      - {x: -13.339941, y: 14.080102}
+      - {x: -13.411686, y: 0.70232916}
+      - {x: -13.373528, y: -7.9040895}
+      - {x: 9.542442, y: -7.8443875}
   m_UseDelaunayMesh: 0
 --- !u!1 &3206943534197552913
 GameObject:
@@ -143,7 +143,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 8.953579
+    OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
