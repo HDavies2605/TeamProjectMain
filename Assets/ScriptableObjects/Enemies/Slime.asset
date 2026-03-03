@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ececc8eff2093c1498fb1f529c9ecdcb, type: 3}
+  m_Name: Slime
+  m_EditorClassIdentifier: 
+  enemyName: Slime
+  maxHealth: 25
+  attack: 8
+  defense: 3
+  speed: 5
+  experienceReward: 50
+  goldReward: 25
+  enemySprite: {fileID: -7010182171088023693, guid: 516663c98890b7f4a942f7832698fbac, type: 3}
+  animatorController: {fileID: 22100000, guid: 9508f1bf2145bd64c9a5a53ea2c410e8, type: 2}
+  displayScale: 5
+  specialAttackChance: 30
+  specialAttackDamage: 15
+  specialAttackName: Power Attack
+  encounterWeight: 50
+  possibleDrops: []

@@ -1,0 +1,1287 @@
+fileFormatVersion: 2
+guid: 26fc31d8b3e7dfb439e05631ce8f33ad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2105713040212901671
+    second: tiles-grass darkest-32x32_0
+  - first:
+      213: -5432976427145291631
+    second: tiles-grass darkest-32x32_1
+  - first:
+      213: 6004563629564893138
+    second: tiles-grass darkest-32x32_2
+  - first:
+      213: 6588619185685188295
+    second: tiles-grass darkest-32x32_3
+  - first:
+      213: -5600292439892645524
+    second: tiles-grass darkest-32x32_4
+  - first:
+      213: 568645735204308889
+    second: tiles-grass darkest-32x32_5
+  - first:
+      213: 1984087423542123480
+    second: tiles-grass darkest-32x32_6
+  - first:
+      213: -508541051619808755
+    second: tiles-grass darkest-32x32_7
+  - first:
+      213: 1945295328424641809
+    second: tiles-grass darkest-32x32_8
+  - first:
+      213: 3670490875128544193
+    second: tiles-grass darkest-32x32_9
+  - first:
+      213: -3106630453554851433
+    second: tiles-grass darkest-32x32_10
+  - first:
+      213: -6867044562726839173
+    second: tiles-grass darkest-32x32_11
+  - first:
+      213: 5924593057329136866
+    second: tiles-grass darkest-32x32_12
+  - first:
+      213: 4714894174788496387
+    second: tiles-grass darkest-32x32_13
+  - first:
+      213: -8527794231356883224
+    second: tiles-grass darkest-32x32_14
+  - first:
+      213: 8486018387856617959
+    second: tiles-grass darkest-32x32_15
+  - first:
+      213: 730948258427836980
+    second: tiles-grass darkest-32x32_16
+  - first:
+      213: 2096588571270682260
+    second: tiles-grass darkest-32x32_17
+  - first:
+      213: -8739789543009071283
+    second: tiles-grass darkest-32x32_18
+  - first:
+      213: -3481532728105784961
+    second: tiles-grass darkest-32x32_19
+  - first:
+      213: 2844141402904102123
+    second: tiles-grass darkest-32x32_20
+  - first:
+      213: 891801467414402349
+    second: tiles-grass darkest-32x32_21
+  - first:
+      213: -33769349971901081
+    second: tiles-grass darkest-32x32_22
+  - first:
+      213: -3059822952792290102
+    second: tiles-grass darkest-32x32_23
+  - first:
+      213: 4587572973102844166
+    second: tiles-grass darkest-32x32_24
+  - first:
+      213: -6090422964982241948
+    second: tiles-grass darkest-32x32_25
+  - first:
+      213: 6661787737657772697
+    second: tiles-grass darkest-32x32_26
+  - first:
+      213: -7811494649438880365
+    second: tiles-grass darkest-32x32_27
+  - first:
+      213: 3115995131299436511
+    second: tiles-grass darkest-32x32_28
+  - first:
+      213: -1614942371044789250
+    second: tiles-grass darkest-32x32_29
+  - first:
+      213: 2454490276134301194
+    second: tiles-grass darkest-32x32_30
+  - first:
+      213: 8592380966817111067
+    second: tiles-grass darkest-32x32_31
+  - first:
+      213: 1542844100157377657
+    second: tiles-grass darkest-32x32_32
+  - first:
+      213: -647751463451183045
+    second: tiles-grass darkest-32x32_33
+  - first:
+      213: 1008824116908355229
+    second: tiles-grass darkest-32x32_34
+  - first:
+      213: -3900150029767624304
+    second: tiles-grass darkest-32x32_35
+  - first:
+      213: -3576496960345877187
+    second: tiles-grass darkest-32x32_36
+  - first:
+      213: -5572241117086747519
+    second: tiles-grass darkest-32x32_37
+  - first:
+      213: 3812737531390806485
+    second: tiles-grass darkest-32x32_38
+  - first:
+      213: -4588192955871283760
+    second: tiles-grass darkest-32x32_39
+  - first:
+      213: -2894780744788113028
+    second: tiles-grass darkest-32x32_40
+  - first:
+      213: 4827780571525915943
+    second: tiles-grass darkest-32x32_41
+  - first:
+      213: -8823013510945156551
+    second: tiles-grass darkest-32x32_42
+  - first:
+      213: 4602994456711639866
+    second: tiles-grass darkest-32x32_43
+  - first:
+      213: -7522418482653917920
+    second: tiles-grass darkest-32x32_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 325
+        width: 225
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0c33f752107c2e0800000000000000
+      internalID: -2105713040212901671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 159
+        width: 354
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1981fe289b03a94b0800000000000000
+      internalID: -5432976427145291631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_2
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 264
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7127bbece745350800000000000000
+      internalID: 6004563629564893138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_3
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 287
+        width: 193
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cec61bcd3a7f6b50800000000000000
+      internalID: 6588619185685188295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 293
+        width: 129
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69a4e192b3c742b0800000000000000
+      internalID: -5600292439892645524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_5
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 159
+        width: 68
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997c4e9884c34e700800000000000000
+      internalID: 568645735204308889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_6
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 264
+        width: 65
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db5c83eff4e88b10800000000000000
+      internalID: 1984087423542123480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 281
+        width: 95
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a6f70ab9c41f8f0800000000000000
+      internalID: -508541051619808755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 281
+        width: 31
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1154af96bc31ffa10800000000000000
+      internalID: 1945295328424641809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_9
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 249
+        width: 130
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb795bf00430f230800000000000000
+      internalID: 3670490875128544193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 129
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791d377ef0803e4d0800000000000000
+      internalID: -3106630453554851433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_11
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 181
+        width: 79
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c93e57a5b53b0a0800000000000000
+      internalID: -6867044562726839173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_12
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 175
+        width: 16
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e449dceef1683250800000000000000
+      internalID: 5924593057329136866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 289
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ca3d9754bae6140800000000000000
+      internalID: 4714894174788496387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_14
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 168
+        width: 70
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eef85a245037a980800000000000000
+      internalID: -8527794231356883224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_15
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 132
+        width: 74
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e170ad43c464c570800000000000000
+      internalID: 8486018387856617959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_16
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 133
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a18cc7199d42a00800000000000000
+      internalID: 730948258427836980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_17
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 124
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4969bb68234981d10800000000000000
+      internalID: 2096588571270682260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_18
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 136
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f454d47b706b680800000000000000
+      internalID: -8739789543009071283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_19
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79ab530e6c1fafc0800000000000000
+      internalID: -3481532728105784961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_20
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 132
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4841b798b687720800000000000000
+      internalID: 2844141402904102123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_21
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 148
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25586ba5b0506c00800000000000000
+      internalID: 891801467414402349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_22
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 80
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76501a284f6088ff0800000000000000
+      internalID: -33769349971901081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_23
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 112
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc8a3f6c335985d0800000000000000
+      internalID: -3059822952792290102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_24
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 112
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6094af220555aaf30800000000000000
+      internalID: 4587572973102844166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_25
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 92
+        width: 65
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4652a50f4987a7ba0800000000000000
+      internalID: -6090422964982241948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_26
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 121
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a0528d6ac637c50800000000000000
+      internalID: 6661787737657772697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_27
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 68
+        width: 68
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39db45fd00ff79390800000000000000
+      internalID: -7811494649438880365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_28
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 4
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd713fa001d3e3b20800000000000000
+      internalID: 3115995131299436511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_29
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 105
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3f52948729699e0800000000000000
+      internalID: -1614942371044789250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_30
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 94
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ea2a5d6e9101220800000000000000
+      internalID: 2454490276134301194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_31
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 85
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c16f507f44e3770800000000000000
+      internalID: 8592380966817111067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_32
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 105
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c00b5e888496510800000000000000
+      internalID: 1542844100157377657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_33
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 89
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38b046d979b207f0800000000000000
+      internalID: -647751463451183045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_34
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 80
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e6b297030100e00800000000000000
+      internalID: 1008824116908355229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_35
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 83
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099b8f83632efd9c0800000000000000
+      internalID: -3900150029767624304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_36
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 70
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35d152b6fabd5ec0800000000000000
+      internalID: -3576496960345877187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_37
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 0
+        width: 146
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184f73d1a3c6ba2b0800000000000000
+      internalID: -5572241117086747519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_38
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 80
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d94954859099e430800000000000000
+      internalID: 3812737531390806485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_39
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 8
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5b750e0d67350c0800000000000000
+      internalID: -4588192955871283760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_40
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 57
+        width: 48
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c798344ff3ca3d7d0800000000000000
+      internalID: -2894780744788113028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_41
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 28
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 725a553e9d8bff240800000000000000
+      internalID: 4827780571525915943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_42
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 28
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93254a745fb5e8580800000000000000
+      internalID: -8823013510945156551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_43
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33b367121f11ef30800000000000000
+      internalID: 4602994456711639866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles-grass darkest-32x32_44
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 0
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d8499de300b9790800000000000000
+      internalID: -7522418482653917920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tiles-grass darkest-32x32_0: -2105713040212901671
+      tiles-grass darkest-32x32_1: -5432976427145291631
+      tiles-grass darkest-32x32_10: -3106630453554851433
+      tiles-grass darkest-32x32_11: -6867044562726839173
+      tiles-grass darkest-32x32_12: 5924593057329136866
+      tiles-grass darkest-32x32_13: 4714894174788496387
+      tiles-grass darkest-32x32_14: -8527794231356883224
+      tiles-grass darkest-32x32_15: 8486018387856617959
+      tiles-grass darkest-32x32_16: 730948258427836980
+      tiles-grass darkest-32x32_17: 2096588571270682260
+      tiles-grass darkest-32x32_18: -8739789543009071283
+      tiles-grass darkest-32x32_19: -3481532728105784961
+      tiles-grass darkest-32x32_2: 6004563629564893138
+      tiles-grass darkest-32x32_20: 2844141402904102123
+      tiles-grass darkest-32x32_21: 891801467414402349
+      tiles-grass darkest-32x32_22: -33769349971901081
+      tiles-grass darkest-32x32_23: -3059822952792290102
+      tiles-grass darkest-32x32_24: 4587572973102844166
+      tiles-grass darkest-32x32_25: -6090422964982241948
+      tiles-grass darkest-32x32_26: 6661787737657772697
+      tiles-grass darkest-32x32_27: -7811494649438880365
+      tiles-grass darkest-32x32_28: 3115995131299436511
+      tiles-grass darkest-32x32_29: -1614942371044789250
+      tiles-grass darkest-32x32_3: 6588619185685188295
+      tiles-grass darkest-32x32_30: 2454490276134301194
+      tiles-grass darkest-32x32_31: 8592380966817111067
+      tiles-grass darkest-32x32_32: 1542844100157377657
+      tiles-grass darkest-32x32_33: -647751463451183045
+      tiles-grass darkest-32x32_34: 1008824116908355229
+      tiles-grass darkest-32x32_35: -3900150029767624304
+      tiles-grass darkest-32x32_36: -3576496960345877187
+      tiles-grass darkest-32x32_37: -5572241117086747519
+      tiles-grass darkest-32x32_38: 3812737531390806485
+      tiles-grass darkest-32x32_39: -4588192955871283760
+      tiles-grass darkest-32x32_4: -5600292439892645524
+      tiles-grass darkest-32x32_40: -2894780744788113028
+      tiles-grass darkest-32x32_41: 4827780571525915943
+      tiles-grass darkest-32x32_42: -8823013510945156551
+      tiles-grass darkest-32x32_43: 4602994456711639866
+      tiles-grass darkest-32x32_44: -7522418482653917920
+      tiles-grass darkest-32x32_5: 568645735204308889
+      tiles-grass darkest-32x32_6: 1984087423542123480
+      tiles-grass darkest-32x32_7: -508541051619808755
+      tiles-grass darkest-32x32_8: 1945295328424641809
+      tiles-grass darkest-32x32_9: 3670490875128544193
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
