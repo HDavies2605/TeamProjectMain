@@ -37,18 +37,18 @@ public class ShopSlot : MonoBehaviour
     {
         if (itemData == null)
         {
-            return;
+            return;  //do nothing if no item
         }
         // PRICE
         if (priceText != null)
         {
-            priceText.text = itemData.value.ToString();
+            priceText.text = itemData.value.ToString();  //update price
         }
 
         // IMAGE
         if (itemImage != null)
-        {
-            itemImage.sprite = itemData.itemIcon;
+        { 
+            itemImage.sprite = itemData.itemIcon;   //update image
         }
     }
 }

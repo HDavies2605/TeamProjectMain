@@ -342,10 +342,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventoryCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1727663492852871675, guid: e6ecd51690a51a84ba34bfa32b9cb2ba, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4766356778501907393, guid: e6ecd51690a51a84ba34bfa32b9cb2ba, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -5256508804588260846, guid: d8f7aa0fabb061048918e1718f55f44f, type: 3}
+      objectReference: {fileID: -2340281215215964265, guid: 77c2548ee11427d4591bdfea452db7f4, type: 3}
     - target: {fileID: 6755111250988896484, guid: e6ecd51690a51a84ba34bfa32b9cb2ba, type: 3}
       propertyPath: m_Pivot.x
       value: 0
