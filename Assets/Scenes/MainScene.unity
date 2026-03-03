@@ -452,7 +452,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5361692594112046493, guid: 8c38748e1c5495b42bd381cefdf2e031, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1130862536}
   m_SourcePrefab: {fileID: 100100000, guid: 8c38748e1c5495b42bd381cefdf2e031, type: 3}
 --- !u!1 &1085698548
 GameObject:
@@ -546,6 +549,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1130862535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5361692594112046493, guid: 8c38748e1c5495b42bd381cefdf2e031, type: 3}
+  m_PrefabInstance: {fileID: 886926106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1130862536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130862535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09674122d72677c479957f3a5ae6459d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSteps: 25
+  maxSteps: 80
+  encounterChance: 57
+  possibleEnemies:
+  - {fileID: 11400000, guid: 25722ed6180e8204c809856eff39dbc5, type: 2}
+  battleSceneName: BattleScene
 --- !u!1001 &1287794966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -729,7 +755,7 @@ MonoBehaviour:
     baseAttack: 10
     baseDefense: 5
     baseSpeed: 8
-    attack: 10
+    attack: 999
     defense: 5
     speed: 8
     availableSkillPoints: 0
