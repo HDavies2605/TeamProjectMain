@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using Data;
+using UnityEditor;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -38,6 +41,25 @@ public class GameManager : MonoBehaviour
     [Header("Item System")]
     [Tooltip("All available items in the game")]
     public List<ItemDataSO> availableItems;
+
+    public static void TriggerBattle(EnemyDataSO enemySO)
+        {
+            EnemyData enemy = enemySO.ToEnemyData();
+            GameManager.Instance.playerData.lastOverworldScene = SceneManager.GetActiveScene().name;
+
+            PlayerPrefs.SetString("CurrentEnemyID", enemy.enemyName);
+            PlayerPrefs.SetString("CurrentEnemyName", enemy.enemyName);
+            PlayerPrefs.SetInt("CurrentEnemyHealth", enemy.maxHealth);
+            PlayerPrefs.SetInt("CurrentEnemyAttack", enemy.attack);
+            PlayerPrefs.SetInt("CurrentEnemyDefense", enemy.defense);
+            PlayerPrefs.SetInt("CurrentEnemySpeed", enemy.speed);
+            PlayerPrefs.SetInt("CurrentEnemyXP", enemy.experienceReward);
+            PlayerPrefs.SetInt("CurrentEnemySpecialChance", enemy.specialAttackChance);
+            PlayerPrefs.SetInt("CurrentEnemySpecialDamage", enemy.specialAttackDamage);
+            PlayerPrefs.SetString("CurrentEnemySpecialName", enemy.specialAttackName);
+
+            SceneManager.LoadScene("BattleScene");
+        }
 }
 
 [System.Serializable]
