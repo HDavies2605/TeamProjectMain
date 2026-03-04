@@ -20,6 +20,7 @@ public class PlayerItemCollector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         //did player collide with item
         if (collision.CompareTag("Item"))
         {
@@ -27,6 +28,7 @@ public class PlayerItemCollector : MonoBehaviour
             Item item = collision.GetComponent<Item>();
             if(item != null) //check if we got item script
             {
+
                 //add item to inventyory
                 bool itemAdded = inventoryController.AddItem(collision.gameObject);
 
