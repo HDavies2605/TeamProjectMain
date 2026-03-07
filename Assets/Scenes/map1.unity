@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &144820690 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7018425862195883548, guid: 8c38748e1c5495b42bd381cefdf2e031, type: 3}
+  m_PrefabInstance: {fileID: 2058483721}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &773592996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18678,6 +18683,7 @@ GameObject:
   - component: {fileID: 1597539919}
   - component: {fileID: 1597539918}
   - component: {fileID: 1597539921}
+  - component: {fileID: 1597539922}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -18803,6 +18809,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1597539922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597539917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9703bd06c12bf81469809f34ba6cf556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedPlayer: {fileID: 144820690}
+  blendAmount: 0.05
 --- !u!1 &1836952812
 GameObject:
   m_ObjectHideFlags: 0
@@ -18893,6 +18913,7 @@ GameObject:
   - component: {fileID: 1914026120}
   - component: {fileID: 1914026122}
   - component: {fileID: 1914026121}
+  - component: {fileID: 1914026123}
   m_Layer: 0
   m_Name: trees
   m_TagString: Untagged
@@ -34617,6 +34638,44 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1914026123
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914026119}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &1993835471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9160540763110579163, guid: e6ecd51690a51a84ba34bfa32b9cb2ba, type: 3}
