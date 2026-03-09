@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Scene = UnityEngine.SceneManagement.Scene;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,10 +20,24 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
             InitializeGame();
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+    
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Only restore position when returning to an overworld scene
+        if (scene.name != "BattleScene")
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null && playerData.lastPosition != Vector2.zero)
+            {
+                player.transform.position = playerData.lastPosition;
+            }
         }
     }
 
@@ -58,8 +73,18 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("CurrentEnemySpecialDamage", enemy.specialAttackDamage);
             PlayerPrefs.SetString("CurrentEnemySpecialName", enemy.specialAttackName);
 
+            // Save current player position
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null)
+                Instance.playerData.lastPosition = player.transform.position;
+            
             SceneManager.LoadScene("BattleScene");
         }
+    
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 }
 
 [System.Serializable]
