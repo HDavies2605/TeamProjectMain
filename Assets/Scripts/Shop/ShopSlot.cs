@@ -11,26 +11,62 @@ public class ShopSlot : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] private TMP_Text priceText;
+    [SerializeField] private TMP_Text quantityText;
     [SerializeField] private Image itemImage;
 
     private void Awake()
     {
-        //find any UI components, (dont need to manually drag them in inspector)
+        //find PriceText if not assigned
         if (priceText == null)
         {
-            priceText = GetComponentInChildren<TMP_Text>();
+            priceText = transform.Find("PriceText")?.GetComponent<TMP_Text>();
+        }
+
+        // Find QuantityText if not assigned
+        if (quantityText == null)
+        {
+            quantityText = transform.Find("QuantityText")?.GetComponent<TMP_Text>();
         }
 
         if (itemImage == null)
         {
-            itemImage = transform.Find("ItemIcon")?.GetComponent<Image>();  //getting the image on the child object named "ItemIcon"
+            itemImage = transform.Find("ItemImage")?.GetComponent<Image>();  //getting the image on the child object named "ItemImage"
         }
+
+        Debug.Log("QuantityText assigned? " + (quantityText != null));
     }
 
-    private void Start()
+
+    // Allows ShopController to assign a ScriptableObject item when the slot is created
+    public void SetItem(ItemDataSO newItem, int quantity, bool infinite)
     {
+        itemData = newItem;
+
+        if (itemData == null)
+        {
+            return;
+        }
+
+        // Quantity display
+        if (quantityText != null)
+        {
+            if (infinite)
+            {
+                quantityText.text = ""; // hide number for infinite
+            }
+            else if (quantity > 1)
+            {
+                quantityText.text = "x" + quantity;
+            }
+            else
+            {
+                quantityText.text = ""; // hide when only 1
+            }
+        }
+
         UpdateDisplay();
     }
+ 
 
     //all comes directly from the scriptable objects.
     public void UpdateDisplay()
@@ -39,6 +75,7 @@ public class ShopSlot : MonoBehaviour
         {
             return;  //do nothing if no item
         }
+
         // PRICE
         if (priceText != null)
         {
@@ -47,7 +84,7 @@ public class ShopSlot : MonoBehaviour
 
         // IMAGE
         if (itemImage != null)
-        { 
+        {
             itemImage.sprite = itemData.itemIcon;   //update image
         }
     }
