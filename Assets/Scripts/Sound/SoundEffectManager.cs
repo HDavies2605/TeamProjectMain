@@ -8,7 +8,7 @@ public class SoundEffectManager : MonoBehaviour
     private static SoundEffectLibrary soundEffectLibrary;
 
 
-
+   
     private void Awake()
     {
         if (Instance == null)
