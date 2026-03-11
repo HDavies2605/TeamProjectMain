@@ -19,12 +19,29 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private Vector2 moveInput;
+    private bool playingFootsteps = false;
+    public float footstepSpeed = 0.5f;
 
     //awake starts before everything (could use start if want)
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();  //get animator from child object (PlayerSprite)
+    }
+
+    private void Update()
+    {
+        //StartFootstep
+        print("got to here");
+        if (rb.linearVelocity.magnitude > 0 && !playingFootsteps)
+        {
+            StartFootsteps();
+            print("active");
+        }
+        else if (rb.linearVelocity.magnitude == 0)
+        {
+            StopFootsteps();
+        }
     }
 
     void FixedUpdate()
@@ -40,11 +57,13 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //choose whether accelerating or decelerating
-        float accelRate = moveInput.sqrMagnitude > 0 
+        float accelRate = moveInput.sqrMagnitude > 0
             ? acceleration //pressing input -> speed up
             : deceleration; // no input pressed -> slow down
 
         rb.linearVelocity = Vector2.MoveTowards(rb.linearVelocity, targetVelocity, accelRate * Time.fixedDeltaTime);
+
+       
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -66,4 +85,22 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("InputX", moveInput.x);
         animator.SetFloat("InputY", moveInput.y);
     }
+
+    void StartFootsteps()
+    {
+        playingFootsteps = true;
+        InvokeRepeating(nameof(PlayFootstep), 0f, footstepSpeed);
+    }
+
+    void StopFootsteps()
+    {
+        playingFootsteps = false;
+        CancelInvoke(nameof(PlayFootstep));
+    }
+
+    void PlayFootstep()
+    {
+        SoundEffectManager.Play("Footsteps");
+    }
+    
 }
