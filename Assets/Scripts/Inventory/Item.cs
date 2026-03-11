@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI; // For UI Image
 using Data; // for ItemDataSO
 
 public class Item : MonoBehaviour
@@ -11,11 +12,17 @@ public class Item : MonoBehaviour
     public ItemDataSO itemDataSO;
 
     private TMP_Text quantityText;
+    private Image itemImage;
+    private SpriteRenderer spriteRenderer; // World sprite
 
     private void Awake()
     {
         quantityText = GetComponentInChildren<TMP_Text>();
+        itemImage = GetComponent<Image>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
         UpdateQuantityDisplay();
+        UpdateSpriteFromSO();
     }
 
     public void UpdateQuantityDisplay()
@@ -23,6 +30,21 @@ public class Item : MonoBehaviour
         if (quantityText != null)
         {
             quantityText.text = quantity > 1 ? quantity.ToString() : ""; // show quantity if more than 1
+        }
+    }
+
+    private void UpdateSpriteFromSO()
+    {
+        if (itemDataSO == null) return;
+
+        if (itemImage != null)
+        {
+            itemImage.sprite = itemDataSO.itemIcon;
+        }
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.sprite = itemDataSO.itemIcon;
         }
     }
 

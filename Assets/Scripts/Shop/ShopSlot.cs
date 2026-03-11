@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
@@ -54,11 +54,11 @@ public class ShopSlot : MonoBehaviour
         {
             if (infinite)
             {
-                quantityText.text = ""; // hide number for infinite
+                quantityText.text = "∞"; // hide number for infinite
             }
             else
             {
-                quantityText.text = "x" + quantity;
+                quantityText.text = "" + quantity;
             }
         }
 
