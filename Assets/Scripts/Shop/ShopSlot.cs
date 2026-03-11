@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
@@ -41,6 +41,8 @@ public class ShopSlot : MonoBehaviour
     public void SetItem(ItemDataSO newItem, int quantity, bool infinite)
     {
         itemData = newItem;
+        Debug.Log("Setting shop slot item: " + newItem.itemName + " quantity: " + quantity);
+
 
         if (itemData == null)
         {
@@ -52,15 +54,11 @@ public class ShopSlot : MonoBehaviour
         {
             if (infinite)
             {
-                quantityText.text = ""; // hide number for infinite
-            }
-            else if (quantity > 1)
-            {
-                quantityText.text = "x" + quantity;
+                quantityText.text = "∞"; // hide number for infinite
             }
             else
             {
-                quantityText.text = ""; // hide when only 1
+                quantityText.text = "" + quantity;
             }
         }
 
