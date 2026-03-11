@@ -59,7 +59,7 @@ public class ShopController : MonoBehaviour
 
         //PopulateShop();
         RefreshShopDisplay();
-        //RefreshPlayerInventoryDisplay();
+        RefreshPlayerInventoryDisplay();
 
         PauseController.SetPaused(true);    //player cant run around while in shop
 
@@ -99,27 +99,26 @@ public class ShopController : MonoBehaviour
     }
 
 
-    /*public void RefreshPlayerInventoryDisplay()
+    public void RefreshPlayerInventoryDisplay()
     {
-        if (InventoryController.Instance != null)
-        {
+        if (InventoryController.Instance == null)
             return;
-        }
+
+        // clear old slots
         foreach (Transform child in playerInventoryGrid)
         {
             Destroy(child.gameObject);
         }
 
-        foreach (Transform slotTransform in InventoryController.Instance.inventoryPage.transform)
+        // get inventory items
+        foreach (var invItem in InventoryController.Instance.GetInventoryItems())
         {
-            InventorySlot inventorySlot = slotTransform.GetComponent<InventorySlot>();
-            if (inventorySlot?.currentItem != null)
-            {
-                Item originalItem = inventorySlot.currentItem.GetComponent<Item>();
-                CreateShopSlot(playerInventoryGrid, originalItem.ID, originalItem.quantity, false, inventorySlot);
-            }
-        } 
-    } */
+            if (invItem.item == null || invItem.quantity <= 0)
+                continue;
+
+            CreateShopSlot(playerInventoryGrid, invItem.item, invItem.quantity, false);
+        }
+    }
 
     private void CreateShopSlot(Transform grid, ItemDataSO itemData, int quantity, bool infinite)
     {
