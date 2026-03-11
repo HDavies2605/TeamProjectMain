@@ -25,7 +25,7 @@ public class CurrencyController : MonoBehaviour
 
     public int GetMoney() => playerMoney;
 
-    public bool SpentMoney(int amount)
+    public bool SpendMoney(int amount)
     {
         if (playerMoney >= amount)
         {
@@ -47,5 +47,7 @@ public class CurrencyController : MonoBehaviour
         playerMoney = amount;
         OnMoneyChanged?.Invoke(playerMoney);
     }
+
+
 
 }

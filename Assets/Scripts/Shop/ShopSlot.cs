@@ -1,89 +1,80 @@
 ﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-
-using Data; //scriptable objects script namespace
+using Data;
 
 public class ShopSlot : MonoBehaviour
 {
     [Header("Item Data")]
-    public ItemDataSO itemData;   // drag sciptable object here in inspector!!! ! !!!!
+    public ItemDataSO itemData;
 
     [Header("UI")]
     [SerializeField] private TMP_Text priceText;
     [SerializeField] private TMP_Text quantityText;
     [SerializeField] private Image itemImage;
 
-    private void Awake()
-    {
-        //find PriceText if not assigned
-        if (priceText == null)
-        {
-            priceText = transform.Find("PriceText")?.GetComponent<TMP_Text>();
-        }
+    [Header("Economy")]
+    public float priceMultiplier = 1f; // modifies the base item price
 
-        // Find QuantityText if not assigned
-        if (quantityText == null)
-        {
-            quantityText = transform.Find("QuantityText")?.GetComponent<TMP_Text>();
-        }
+    private int quantity;
+    private bool infiniteStock;
 
-        if (itemImage == null)
-        {
-            itemImage = transform.Find("ItemImage")?.GetComponent<Image>();  //getting the image on the child object named "ItemImage"
-        }
+    public GameObject currentItem;
 
-        Debug.Log("QuantityText assigned? " + (quantityText != null));
-    }
-
-
-    // Allows ShopController to assign a ScriptableObject item when the slot is created
-    public void SetItem(ItemDataSO newItem, int quantity, bool infinite)
+    public void SetItem(ItemDataSO newItem, int qty, bool infinite)
     {
         itemData = newItem;
-        Debug.Log("Setting shop slot item: " + newItem.itemName + " quantity: " + quantity);
+        quantity = qty;
+        infiniteStock = infinite;
 
+        if (quantityText != null)
+        {
+            quantityText.text = infinite ? "∞" : qty.ToString();
+        }
 
+        UpdateDisplay();
+    }
+
+    public int GetCurrentPrice()
+    {
+        if (itemData == null)
+        {
+            return 0;
+        }
+
+        return Mathf.Max(1, Mathf.FloorToInt(itemData.value * priceMultiplier));
+    }
+
+    public bool IsInfiniteStock()
+    {
+        return infiniteStock;
+    }
+
+    public void UpdateDisplay()
+    {
         if (itemData == null)
         {
             return;
         }
 
-        // Quantity display
-        if (quantityText != null)
-        {
-            if (infinite)
-            {
-                quantityText.text = "∞"; // hide number for infinite
-            }
-            else
-            {
-                quantityText.text = "" + quantity;
-            }
-        }
-
-        UpdateDisplay();
-    }
- 
-
-    //all comes directly from the scriptable objects.
-    public void UpdateDisplay()
-    {
-        if (itemData == null)
-        {
-            return;  //do nothing if no item
-        }
-
-        // PRICE
         if (priceText != null)
         {
-            priceText.text = itemData.value.ToString();  //update price
+            priceText.text = GetCurrentPrice().ToString();
         }
 
-        // IMAGE
         if (itemImage != null)
         {
-            itemImage.sprite = itemData.itemIcon;   //update image
+            itemImage.sprite = itemData.itemIcon;
+        }
+    }
+
+    public void UpdateQuantity(int newQuantity)
+    {
+        quantity = newQuantity;
+
+        if (quantityText != null && !infiniteStock)
+        {
+            quantityText.text = quantity.ToString();
         }
     }
 }
