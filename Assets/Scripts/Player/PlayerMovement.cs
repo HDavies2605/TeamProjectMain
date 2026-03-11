@@ -29,6 +29,21 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponentInChildren<Animator>();  //get animator from child object (PlayerSprite)
     }
 
+    private void Update()
+    {
+        //StartFootstep
+        print("got to here");
+        if (rb.linearVelocity.magnitude > 0 && !playingFootsteps)
+        {
+            StartFootsteps();
+            print("active");
+        }
+        else if (rb.linearVelocity.magnitude == 0)
+        {
+            StopFootsteps();
+        }
+    }
+
     void FixedUpdate()
     {
         Vector2 targetVelocity = moveInput * movementSpeed;
@@ -48,15 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
         rb.linearVelocity = Vector2.MoveTowards(rb.linearVelocity, targetVelocity, accelRate * Time.fixedDeltaTime);
 
-        //StartFootstep
-        if(rb.linearVelocity.magnitude > 0 && !playingFootsteps)
-        {
-            StartFootsteps();
-        }
-        else if(rb.linearVelocity.magnitude == 0)
-        {
-            StopFootsteps();
-        }
+       
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -93,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
 
     void PlayFootstep()
     {
-        SoundEffectManager.Play("Footstep");
+        SoundEffectManager.Play("Footsteps");
     }
     
 }
