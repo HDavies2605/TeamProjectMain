@@ -16971,6 +16971,7 @@ GameObject:
   - component: {fileID: 1713603490}
   - component: {fileID: 1713603493}
   - component: {fileID: 1713603494}
+  - component: {fileID: 1713603495}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -17078,6 +17079,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 1921006622}
+--- !u!114 &1713603495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713603489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f38a0e15925fe4d9e5ef8dc839ba65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingMoney: 500
 --- !u!224 &1715464530 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1526047037058237540, guid: 91ead50e4aa95c247892a635d7c7889a, type: 3}
