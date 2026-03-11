@@ -8,7 +8,7 @@ public class Item : MonoBehaviour
     public int ID;
     public int quantity = 1;
 
-    // ADD THIS: ScriptableObject reference
+    //ScriptableObject reference
     public ItemDataSO itemDataSO;
 
     private TMP_Text quantityText;
@@ -29,7 +29,7 @@ public class Item : MonoBehaviour
     {
         if (quantityText != null)
         {
-            quantityText.text = quantity > 1 ? quantity.ToString() : ""; // show quantity if more than 1
+            quantityText.text = quantity > 0 ? quantity.ToString() : ""; // show quantity if more than 0
         }
     }
 

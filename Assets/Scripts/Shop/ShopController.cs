@@ -1,8 +1,6 @@
-using Data;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using TMPro;
+using Data;
 
 public class ShopController : MonoBehaviour
 {
@@ -15,6 +13,7 @@ public class ShopController : MonoBehaviour
     public TMP_Text playerMoneyText, shopTitleText;
 
     private ShopNPC currentShop;
+    public ShopNPC CurrentShop => currentShop;
 
     private void Awake()
     {
@@ -28,15 +27,14 @@ public class ShopController : MonoBehaviour
         }
     }
 
-    void Start()
+    private void Start()
     {
         shopPanel.SetActive(false);
+
         if (CurrencyController.Instance != null)
         {
-
             CurrencyController.Instance.OnMoneyChanged += UpdateMoneyDisplay;
             UpdateMoneyDisplay(CurrencyController.Instance.GetMoney());
-
         }
     }
 
@@ -52,17 +50,15 @@ public class ShopController : MonoBehaviour
     {
         currentShop = shop;
         shopPanel.SetActive(true);
+
         if (shopTitleText != null)
         {
-            shopTitleText.text = shop.shopkeeperName + "'s Shop";   //e.g., "(NPC NAME)'s Shop"
+            shopTitleText.text = shop.shopkeeperName + "'s Shop";
         }
 
-        //PopulateShop();
         RefreshShopDisplay();
         RefreshPlayerInventoryDisplay();
-
-        PauseController.SetPaused(true);    //player cant run around while in shop
-
+        PauseController.SetPaused(true);
     }
 
     public void CloseShop()
@@ -70,8 +66,13 @@ public class ShopController : MonoBehaviour
         shopPanel.SetActive(false);
         currentShop = null;
         PauseController.SetPaused(false);
-    }
 
+        // Refresh the real inventory UI after closing the shop
+        if (InventoryController.Instance != null)
+        {
+            InventoryController.Instance.RefreshInventoryUI();
+        }
+    }
 
     public void RefreshShopDisplay()
     {
@@ -80,56 +81,73 @@ public class ShopController : MonoBehaviour
             return;
         }
 
-        // Clear existing slots
         foreach (Transform child in shopInventoryGrid)
         {
             Destroy(child.gameObject);
         }
 
-        // Create slots from ScriptableObjects
         foreach (var stockItem in currentShop.GetShopStock())
         {
-            if (stockItem.quantity == 0)
+            if (stockItem.quantity == 0 && !stockItem.infiniteStock)
             {
-                continue; // skip out of stock
+                continue;
             }
 
-            CreateShopSlot(shopInventoryGrid, stockItem.item, stockItem.quantity, stockItem.infiniteStock);
+            CreateSlot(shopInventoryGrid, stockItem.item, stockItem.quantity, stockItem.infiniteStock, 1f, true);
         }
     }
-
 
     public void RefreshPlayerInventoryDisplay()
     {
         if (InventoryController.Instance == null)
+        {
             return;
+        }
 
-        // clear old slots
         foreach (Transform child in playerInventoryGrid)
         {
             Destroy(child.gameObject);
         }
 
-        // get inventory items
         foreach (var invItem in InventoryController.Instance.GetInventoryItems())
         {
             if (invItem.item == null || invItem.quantity <= 0)
+            {
                 continue;
+            }
 
-            CreateShopSlot(playerInventoryGrid, invItem.item, invItem.quantity, false);
+            CreateSlot(playerInventoryGrid, invItem.item, invItem.quantity, false, 0.75f, false);
         }
     }
 
-    private void CreateShopSlot(Transform grid, ItemDataSO itemData, int quantity, bool infinite)
+    private void CreateSlot(Transform grid, ItemDataSO itemData, int quantity, bool infinite, float multiplier, bool isShop)
     {
         GameObject slotObj = Instantiate(shopSlotPrefab, grid);
-
         ShopSlot slot = slotObj.GetComponent<ShopSlot>();
 
         if (slot != null)
         {
+            slot.priceMultiplier = multiplier;
             slot.SetItem(itemData, quantity, infinite);
-        }
-    }
 
+            if (itemData.prefab != null)
+            {
+                GameObject itemObj = Instantiate(itemData.prefab, slotObj.transform);
+                itemObj.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+
+                Item itemComp = itemObj.GetComponent<Item>();
+                if (itemComp != null)
+                {
+                    itemComp.quantity = quantity;
+                    itemComp.itemDataSO = itemData;
+                    itemComp.UpdateQuantityDisplay();
+                }
+
+                slot.currentItem = itemObj;
+            }
+        }
+
+        ShopItemHandler handler = slotObj.AddComponent<ShopItemHandler>();
+        handler.Initialise(isShop, slot);
+    }
 }

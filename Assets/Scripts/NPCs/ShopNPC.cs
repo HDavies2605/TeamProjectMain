@@ -4,14 +4,12 @@ using Data; // Needed to access your ItemDataSO ScriptableObjects
 
 public class ShopNPC : MonoBehaviour, IInteractable
 {
-
     public string shopID = "starter_shop"; // Unique identifier for the shop
     public string shopkeeperName = "Bob"; // Name of the shopkeeper
 
     public List<ShopStockItem> shopStock = new(); // List of items available in the shop
 
     private bool isInitialized = false; // Flag to check if the shop has been initialized
-
 
     [System.Serializable]
     public class ShopStockItem
@@ -34,7 +32,6 @@ public class ShopNPC : MonoBehaviour, IInteractable
         }
 
         isInitialized = true;
-
     }
 
     public bool CanInteract()
@@ -49,7 +46,7 @@ public class ShopNPC : MonoBehaviour, IInteractable
             return;
         }
 
-        if (ShopController.Instance.shopPanel.activeSelf)   //is panel visible right now?
+        if (ShopController.Instance.shopPanel.activeSelf)   // is panel visible right now?
         {
             ShopController.Instance.CloseShop();
         }
@@ -69,7 +66,7 @@ public class ShopNPC : MonoBehaviour, IInteractable
         shopStock = stock;
     }
 
-    // Modified to use ScriptableObject items instead of itemID
+    //changed slightly to use ScriptableObject items instead of itemID !!
     public void AddToStock(ItemDataSO item, int quantity)
     {
         ShopStockItem existingItem = shopStock.Find(i => i.item == item);
@@ -78,7 +75,9 @@ public class ShopNPC : MonoBehaviour, IInteractable
         {
             // If stock is infinite, we don't modify quantity
             if (existingItem.quantity > 0)
+            {
                 existingItem.quantity += quantity;
+            }
         }
         else
         {
@@ -86,7 +85,7 @@ public class ShopNPC : MonoBehaviour, IInteractable
         }
     }
 
-    // Modified to support infinite stock
+    //supports infinite stock
     public bool RemoveFromStock(ItemDataSO item, int quantity)
     {
         ShopStockItem existingItem = shopStock.Find(i => i.item == item);
@@ -95,7 +94,9 @@ public class ShopNPC : MonoBehaviour, IInteractable
         {
             // If quantity <= 0 we treat it as infinite stock
             if (existingItem.quantity <= 0)
+            {
                 return true;
+            }
 
             if (existingItem.quantity >= quantity)
             {

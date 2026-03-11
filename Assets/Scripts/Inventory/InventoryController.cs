@@ -1,9 +1,10 @@
+using Data; // Needed for ItemDataSO
+using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using System.Collections.Generic;
-using Data; // Needed for ItemDataSO
 
-//this script should go on the GameController object!!!
+//this script should go on the GameController object people! !! !!!
 public class InventoryController : MonoBehaviour
 {
     public GameObject inventoryPage;    // parent object for inventory slots
@@ -59,15 +60,13 @@ public class InventoryController : MonoBehaviour
         }
     }
 
-    /// Returns the full list of inventory items (for ShopController)
+    // Returns the full list of inventory items (for ShopController)
     public List<InventoryItem> GetInventoryItems()
     {
         return inventoryList;
     }
 
-    /// <summary>
-    /// Adds an item to the inventory (SO-based) and stacks quantity if already exists
-    /// </summary>
+    // Adds an item to the inventory (SO-based) and stacks quantity if already exists
     public bool AddItem(ItemDataSO itemSO, int quantity = 1)
     {
         if (itemSO == null) return false;
@@ -85,9 +84,6 @@ public class InventoryController : MonoBehaviour
         return true;
     }
 
-    /// <summary>
-    /// Old prefab-based AddItem for legacy support (optional)
-    /// </summary>
     public bool AddItem(GameObject itemPrefab)
     {
         Item itemToAdd = itemPrefab.GetComponent<Item>();
@@ -140,46 +136,76 @@ public class InventoryController : MonoBehaviour
         return false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public bool RemoveItem(ItemDataSO itemSO, int quantity = 1)
     {
+        if (itemSO == null) return false;
 
+        InventoryItem existing = inventoryList.Find(x => x.item == itemSO);
+        if (existing == null) return false;
+
+        if (existing.quantity <= quantity)
+        {
+            // Remove completely
+            inventoryList.Remove(existing);
+        }
+        else
+        {
+            existing.quantity -= quantity;
+        }
+
+        return true;
     }
 
-    /// <summary>
-    /// Refreshes the inventory UI (instantiates slots and item icons)
-    /// Call this when you open the shop or update inventory display
-    /// </summary>
+    // Refreshes the inventory UI (instantiates slots and item icons)
+    // called when you open the shop or update inventory display
     public void RefreshInventoryUI()
     {
-        // Clear existing slots
-        foreach (Transform child in inventoryPage.transform)
-            Destroy(child.gameObject);
+        // Keep all existing slots (we have a fixed number)
+        InventorySlot[] slots = inventoryPage.GetComponentsInChildren<InventorySlot>();
 
-        foreach (var invItem in inventoryList)
+        // Clear existing slot items but keep the slot objects
+        foreach (var slot in slots)
         {
+            if (slot.currentItem != null)
+            {
+                Destroy(slot.currentItem);
+                slot.currentItem = null;
+            }
+        }
+
+        // Fill slots with items from inventoryList
+        for (int i = 0; i < inventoryList.Count && i < slots.Length; i++)
+        {
+            var invItem = inventoryList[i];
             if (invItem.item == null) continue;
 
-            // Instantiate slot UI
-            InventorySlot slot = Instantiate(slotPrefab, inventoryPage.transform).GetComponent<InventorySlot>();
-
-            // Instantiate the actual item prefab (with Item component, icon, TMP text, etc.)
-            GameObject itemPrefab = invItem.item.prefab; // <-- you need a reference in your SO to prefab
-            if (itemPrefab == null) continue;
-
-            GameObject itemObj = Instantiate(itemPrefab, slot.transform);
-            itemObj.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-
-            // Update Item component quantity
-            Item itemComp = itemObj.GetComponent<Item>();
-            if (itemComp != null)
+            if (invItem.item.prefab != null)
             {
-                itemComp.quantity = invItem.quantity;
-                itemComp.itemDataSO = invItem.item;
-                itemComp.UpdateQuantityDisplay();
-            }
+                // Use prefab if assigned
+                GameObject itemObj = Instantiate(invItem.item.prefab, slots[i].transform);
+                itemObj.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 
-            slot.currentItem = itemObj;
+                Item itemComp = itemObj.GetComponent<Item>();
+                if (itemComp != null)
+                {
+                    itemComp.quantity = invItem.quantity;
+                    itemComp.itemDataSO = invItem.item;
+                    itemComp.UpdateQuantityDisplay();
+                }
+
+                slots[i].currentItem = itemObj;
+            }
+            else
+            {
+                // Fallback: display item name + quantity if no prefab
+                TMP_Text text = slots[i].GetComponentInChildren<TMP_Text>();
+                if (text != null)
+                {
+                    text.text = $"{invItem.item.itemName} x{invItem.quantity}";
+                }
+            }
         }
+
+        // Remaining slots stay empty
     }
 }
