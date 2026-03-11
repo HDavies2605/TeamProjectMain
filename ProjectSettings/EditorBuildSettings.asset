@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/map1.unity
     guid: dd27dbde233469b45954d74f99811a93
+  - enabled: 1
+    path: Assets/Scenes/AidanTestScene.unity
+    guid: a413121107d8bbf4f8427676d1ec18d4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

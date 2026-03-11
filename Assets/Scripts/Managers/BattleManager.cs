@@ -59,10 +59,8 @@ namespace Managers
         /// </summary>
         private void Start()
         {
-            // Check if we have enemy data from PlayerPrefs
             if (PlayerPrefs.HasKey("CurrentEnemyName"))
             {
-                // Load enemy from PlayerPrefs
                 EnemyData enemy = new EnemyData
                 {
                     enemyName = PlayerPrefs.GetString("CurrentEnemyName"),
@@ -70,34 +68,39 @@ namespace Managers
                     currentHealth = PlayerPrefs.GetInt("CurrentEnemyHealth"),
                     attack = PlayerPrefs.GetInt("CurrentEnemyAttack"),
                     defense = PlayerPrefs.GetInt("CurrentEnemyDefense"),
-                    speed = PlayerPrefs.GetInt("CurrentEnemySpeed", 5), // Default 5 if not set
+                    speed = PlayerPrefs.GetInt("CurrentEnemySpeed", 5),
                     experienceReward = PlayerPrefs.GetInt("CurrentEnemyXP"),
                     specialAttackChance = PlayerPrefs.GetInt("CurrentEnemySpecialChance", 20),
                     specialAttackDamage = PlayerPrefs.GetInt("CurrentEnemySpecialDamage", 15),
                     specialAttackName = PlayerPrefs.GetString("CurrentEnemySpecialName", "Power Attack")
                 };
-                
-                // SET THE ID HERE TOO (if it wasn't set already)
-                if (!PlayerPrefs.HasKey("CurrentEnemyID") || string.IsNullOrEmpty(PlayerPrefs.GetString("CurrentEnemyID")))
-                {
-                    PlayerPrefs.SetString("CurrentEnemyID", enemy.enemyName);
-                }
-                
-                // Find the matching ScriptableObject to get the animator
-                string enemyID = PlayerPrefs.GetString("CurrentEnemyID");
+
+                // Find the SO and pull sprite + animator BEFORE StartBattle
+                string enemyID = PlayerPrefs.GetString("CurrentEnemyID", enemy.enemyName);
                 EnemyDataSO enemySO = GameManager.Instance.availableEnemies.Find(e => e.enemyName == enemyID);
+
+                Debug.Log($"Looking for enemy ID: '{enemyID}'");
+                Debug.Log($"Available enemies count: {GameManager.Instance.availableEnemies.Count}");
+                foreach (var e in GameManager.Instance.availableEnemies)
+                    Debug.Log($"  - Available enemy: '{e.enemyName}'");
+                Debug.Log($"enemySO found: {enemySO != null}");
+                Debug.Log($"enemySO sprite: {(enemySO != null ? enemySO.enemySprite?.name ?? "NULL" : "N/A")}");
+                Debug.Log($"enemySO animator: {(enemySO != null ? enemySO.animatorController?.name ?? "NULL" : "N/A")}");
+                Debug.Log($"enemySprite reference: {(enemySprite != null ? "SET" : "NULL")}");
+                Debug.Log($"enemyAnimator reference: {(enemyAnimator != null ? "SET" : "NULL")}");
                 
-                if (enemySO != null && enemySO.animatorController != null && enemyAnimator != null)
+                if (enemySO != null)
                 {
-                    enemyAnimator.runtimeAnimatorController = enemySO.animatorController;
+                    // Inject the sprite from the SO into the runtime data
+                    enemy.enemySprite = enemySO.enemySprite;
+
+                    if (enemySO.animatorController != null && enemyAnimator != null)
+                        enemyAnimator.runtimeAnimatorController = enemySO.animatorController;
                 }
-                
-                
-                // Start the battle!
-                StartBattle(enemy);
-                
-                // Clear PlayerPrefs so old data doesn't persist
+
                 PlayerPrefs.DeleteKey("CurrentEnemyName");
+
+                StartBattle(enemy);
             }
         }
     
@@ -110,11 +113,28 @@ namespace Managers
             battleActive = true;
             currentState = BattleState.Start;
             
+            Debug.Log($"StartBattle called for: {currentEnemy.enemyName}");
+            Debug.Log($"currentEnemy.enemySprite: {(currentEnemy.enemySprite != null ? currentEnemy.enemySprite.name : "NULL")}");
+            Debug.Log($"enemySprite SpriteRenderer: {(enemySprite != null ? "SET" : "NULL")}");
+            Debug.Log($"enemyAnimator Animator: {(enemyAnimator != null ? "SET" : "NULL")}");
+            
             // SET ENEMY SPRITE AND ANIMATOR
             if (enemySprite != null && currentEnemy.enemySprite != null)
             {
                 enemySprite.sprite = currentEnemy.enemySprite;
-                enemySprite.transform.localScale = new Vector3(5, 5, 1);
+                
+                Debug.Log($"Sprite applied: {enemySprite.sprite.name}");
+                Debug.Log($"SpriteRenderer enabled: {enemySprite.enabled}");
+                Debug.Log($"GameObject active: {enemySprite.gameObject.activeSelf}");
+            }
+            else
+            {
+                Debug.Log("SPRITE BLOCK SKIPPED");
+            }
+            if (enemyAnimator != null)
+            {
+                Debug.Log($"Animator enabled: {enemyAnimator.enabled}");
+                Debug.Log($"Current controller: {(enemyAnimator.runtimeAnimatorController != null ? enemyAnimator.runtimeAnimatorController.name : "NULL")}");
             }
             
             string enemyID = PlayerPrefs.GetString("CurrentEnemyID", "");
@@ -262,15 +282,12 @@ namespace Managers
             {
                 damage = currentEnemy.specialAttackDamage;
                 attackName = currentEnemy.specialAttackName;
+                enemyAnimator.SetTrigger("SpecialAttack");
             }
             else
             {
                 damage = currentEnemy.attack;
                 attackName = "Attack";
-            }
-    
-            if (enemyAnimator != null)
-            {
                 enemyAnimator.SetTrigger("Attack");
             }
     
