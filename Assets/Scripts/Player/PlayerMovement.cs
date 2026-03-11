@@ -32,11 +32,11 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         //StartFootstep
-        print("got to here");
+       
         if (rb.linearVelocity.magnitude > 0 && !playingFootsteps)
         {
             StartFootsteps();
-            print("active");
+            
         }
         else if (rb.linearVelocity.magnitude == 0)
         {
