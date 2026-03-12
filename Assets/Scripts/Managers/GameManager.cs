@@ -1,6 +1,10 @@
 using System.Collections.Generic;
 using Data;
+using UnityEditor;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Scene = UnityEngine.SceneManagement.Scene;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,10 +20,24 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
             InitializeGame();
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+    
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Only restore position when returning to an overworld scene
+        if (scene.name != "BattleScene")
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null && playerData.lastPosition != Vector2.zero)
+            {
+                player.transform.position = playerData.lastPosition;
+            }
         }
     }
 
@@ -38,6 +56,35 @@ public class GameManager : MonoBehaviour
     [Header("Item System")]
     [Tooltip("All available items in the game")]
     public List<ItemDataSO> availableItems;
+
+    public static void TriggerBattle(EnemyDataSO enemySO)
+        {
+            EnemyData enemy = enemySO.ToEnemyData();
+            GameManager.Instance.playerData.lastOverworldScene = SceneManager.GetActiveScene().name;
+
+            PlayerPrefs.SetString("CurrentEnemyID", enemy.enemyName);
+            PlayerPrefs.SetString("CurrentEnemyName", enemy.enemyName);
+            PlayerPrefs.SetInt("CurrentEnemyHealth", enemy.maxHealth);
+            PlayerPrefs.SetInt("CurrentEnemyAttack", enemy.attack);
+            PlayerPrefs.SetInt("CurrentEnemyDefense", enemy.defense);
+            PlayerPrefs.SetInt("CurrentEnemySpeed", enemy.speed);
+            PlayerPrefs.SetInt("CurrentEnemyXP", enemy.experienceReward);
+            PlayerPrefs.SetInt("CurrentEnemySpecialChance", enemy.specialAttackChance);
+            PlayerPrefs.SetInt("CurrentEnemySpecialDamage", enemy.specialAttackDamage);
+            PlayerPrefs.SetString("CurrentEnemySpecialName", enemy.specialAttackName);
+
+            // Save current player position
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null)
+                Instance.playerData.lastPosition = player.transform.position;
+            
+            SceneManager.LoadScene("BattleScene");
+        }
+    
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 }
 
 [System.Serializable]

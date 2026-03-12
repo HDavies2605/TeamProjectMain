@@ -12,7 +12,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -41,6 +41,24 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 966481467
+    locked: 0
+  - name: WalkInfront
+    uniqueID: 2438137461
+    locked: 0
+  - name: Collision
+    uniqueID: 121223885
+    locked: 0
+  - name: Player
+    uniqueID: 3430391335
+    locked: 0
+  - name: WalkBehind
+    uniqueID: 1870795065
+    locked: 0
+  - name: Decoration
+    uniqueID: 1596698851
     locked: 0
   m_RenderingLayers:
   - Default
