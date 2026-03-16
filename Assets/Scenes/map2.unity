@@ -54117,9 +54117,6 @@ MonoBehaviour:
     lastPosition: {x: 0, y: 0}
   availableEnemies:
   - {fileID: 11400000, guid: 25722ed6180e8204c809856eff39dbc5, type: 2}
-  - {fileID: 11400000, guid: d4eb32e32bb0af04ca2c8a039cbc4930, type: 2}
-  - {fileID: 11400000, guid: 4986262c3834902419e970a2f3b5f357, type: 2}
-  - {fileID: 11400000, guid: a23508d4fdce1444e937ac8df164ca16, type: 2}
   availableItems: []
 --- !u!4 &1040082979
 Transform:
