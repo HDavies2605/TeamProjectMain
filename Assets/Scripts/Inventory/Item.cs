@@ -1,9 +1,10 @@
+using Data; // for ItemDataSO
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI; // For UI Image
-using Data; // for ItemDataSO
+using UnityEngine.EventSystems;
 
-public class Item : MonoBehaviour
+public class Item : MonoBehaviour, IPointerClickHandler
 {
     public int ID;
     public int quantity = 1;
@@ -71,4 +72,21 @@ public class Item : MonoBehaviour
         cloneItem.UpdateQuantityDisplay();
         return clone;
     }
+    public void OnItemClicked()
+    {
+        if (InventorySelection.Instance != null)
+        {
+            InventorySelection.Instance.SelectItem(this);
+        }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        // Only allow selection if this item is inside the inventory UI
+        if (transform.GetComponentInParent<InventorySlot>() != null)
+        {
+            InventorySelection.Instance.SelectItem(this);
+        }
+    }
+
 }
