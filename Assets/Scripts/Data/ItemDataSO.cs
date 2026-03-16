@@ -37,10 +37,7 @@ namespace Data
         public int defenseBonus = 0;
         [Tooltip("Speed bonus when equipped")]
         public int speedBonus = 0;
-
-        [Header("Prefab")]
-        public GameObject prefab;
-
+    
         /// <summary>
         /// Convert this ScriptableObject to runtime ItemData
         /// </summary>

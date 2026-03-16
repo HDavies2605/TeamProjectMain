@@ -16,10 +16,9 @@ MonoBehaviour:
   description: "Basic Stick you found on the floor, looks close to a spear \n"
   itemIcon: {fileID: 1074689420854597584, guid: b020717338af3c94e827b59028cb83f4, type: 3}
   itemType: 1
-  value: 2
+  value: 1
   healthRestore: 0
   manaRestore: 0
   attackBonus: 3
   defenseBonus: 0
   speedBonus: 0
-  prefab: {fileID: 0}

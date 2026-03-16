@@ -1,80 +1,54 @@
-﻿using UnityEngine;
+using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using Data;
+
+using Data; //scriptable objects script namespace
 
 public class ShopSlot : MonoBehaviour
 {
     [Header("Item Data")]
-    public ItemDataSO itemData;
+    public ItemDataSO itemData;   // drag sciptable object here in inspector!!! ! !!!!
 
     [Header("UI")]
     [SerializeField] private TMP_Text priceText;
-    [SerializeField] private TMP_Text quantityText;
     [SerializeField] private Image itemImage;
 
-    [Header("Economy")]
-    public float priceMultiplier = 1f; // modifies the base item price
-
-    private int quantity;
-    private bool infiniteStock;
-
-    public GameObject currentItem;
-
-    public void SetItem(ItemDataSO newItem, int qty, bool infinite)
+    private void Awake()
     {
-        itemData = newItem;
-        quantity = qty;
-        infiniteStock = infinite;
-
-        if (quantityText != null)
+        //find any UI components, (dont need to manually drag them in inspector)
+        if (priceText == null)
         {
-            quantityText.text = infinite ? "∞" : qty.ToString();
+            priceText = GetComponentInChildren<TMP_Text>();
         }
 
+        if (itemImage == null)
+        {
+            itemImage = transform.Find("ItemIcon")?.GetComponent<Image>();  //getting the image on the child object named "ItemIcon"
+        }
+    }
+
+    private void Start()
+    {
         UpdateDisplay();
     }
 
-    public int GetCurrentPrice()
-    {
-        if (itemData == null)
-        {
-            return 0;
-        }
-
-        return Mathf.Max(1, Mathf.FloorToInt(itemData.value * priceMultiplier));
-    }
-
-    public bool IsInfiniteStock()
-    {
-        return infiniteStock;
-    }
-
+    //all comes directly from the scriptable objects.
     public void UpdateDisplay()
     {
         if (itemData == null)
         {
-            return;
+            return;  //do nothing if no item
         }
-
+        // PRICE
         if (priceText != null)
         {
-            priceText.text = GetCurrentPrice().ToString();
+            priceText.text = itemData.value.ToString();  //update price
         }
 
+        // IMAGE
         if (itemImage != null)
-        {
-            itemImage.sprite = itemData.itemIcon;
-        }
-    }
-
-    public void UpdateQuantity(int newQuantity)
-    {
-        quantity = newQuantity;
-
-        if (quantityText != null && !infiniteStock)
-        {
-            quantityText.text = quantity.ToString();
+        { 
+            itemImage.sprite = itemData.itemIcon;   //update image
         }
     }
 }

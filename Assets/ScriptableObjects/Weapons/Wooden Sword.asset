@@ -22,4 +22,3 @@ MonoBehaviour:
   attackBonus: 8
   defenseBonus: 0
   speedBonus: 1
-  prefab: {fileID: 6164586914244435028, guid: 6180770215347394f813d3b572d36167, type: 3}

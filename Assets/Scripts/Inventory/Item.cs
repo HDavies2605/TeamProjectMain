@@ -1,51 +1,27 @@
-using Data; // for ItemDataSO
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI; // For UI Image
-using UnityEngine.EventSystems;
 
-public class Item : MonoBehaviour, IPointerClickHandler
+public class Item : MonoBehaviour
 {
     public int ID;
     public int quantity = 1;
 
-    //ScriptableObject reference
-    public ItemDataSO itemDataSO;
-
     private TMP_Text quantityText;
-    private Image itemImage;
-    private SpriteRenderer spriteRenderer; // World sprite
+
+
 
     private void Awake()
     {
         quantityText = GetComponentInChildren<TMP_Text>();
-        itemImage = GetComponent<Image>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
         UpdateQuantityDisplay();
-        UpdateSpriteFromSO();
+
     }
 
     public void UpdateQuantityDisplay()
     {
         if (quantityText != null)
-        {
-            quantityText.text = quantity > 0 ? quantity.ToString() : ""; // show quantity if more than 0
-        }
-    }
-
-    private void UpdateSpriteFromSO()
-    {
-        if (itemDataSO == null) return;
-
-        if (itemImage != null)
-        {
-            itemImage.sprite = itemDataSO.itemIcon;
-        }
-
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.sprite = itemDataSO.itemIcon;
+        { 
+            quantityText.text = quantity > 1 ? quantity.ToString() : ""; // show quantity if more than 1, otherwise show empty
         }
     }
 
@@ -54,8 +30,8 @@ public class Item : MonoBehaviour, IPointerClickHandler
         quantity += amount;
         UpdateQuantityDisplay();
     }
-
     public int RemoveFromStack(int amount = 1)
+
     {
         int removedAmount = Mathf.Min(amount, quantity);
         quantity -= removedAmount;
@@ -63,30 +39,15 @@ public class Item : MonoBehaviour, IPointerClickHandler
         return removedAmount;
     }
 
+
     //splitting items
     public GameObject CloneItem(int newQuantity)
     {
         GameObject clone = Instantiate(gameObject);   //copy game object
         Item cloneItem = clone.GetComponent<Item>();
-        cloneItem.quantity = newQuantity;   //give new quantity
+        cloneItem.quantity = newQuantity;   //give new quanitty
         cloneItem.UpdateQuantityDisplay();
         return clone;
-    }
-    public void OnItemClicked()
-    {
-        if (InventorySelection.Instance != null)
-        {
-            InventorySelection.Instance.SelectItem(this);
-        }
-    }
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        // Only allow selection if this item is inside the inventory UI
-        if (transform.GetComponentInParent<InventorySlot>() != null)
-        {
-            InventorySelection.Instance.SelectItem(this);
-        }
     }
 
 }
