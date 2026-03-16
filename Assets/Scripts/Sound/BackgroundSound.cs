@@ -17,10 +17,13 @@ public class BackgroundSound : MonoBehaviour
         scene = current_Scene.name;
         if (scene == "BattleScene")
         {
-
+           
             if(Playing == true)
             {
+                SoundEffectManager.audioSource.Stop();
+                print("stopping source");
                 Playing = false;
+                
             }
             if (!Battleplaying)
             {
@@ -31,13 +34,15 @@ public class BackgroundSound : MonoBehaviour
 
 
 
-        if (scene == "map2" || scene == "map" || scene == "AidenTestScene")
+        else if (scene == "map2" || scene == "map" || scene == "AidenTestScene")
         {
 
             if (Battleplaying == true)
             {
-                
+                SoundEffectManager.audioSource.Stop();
+                print("stopping source");
                 Battleplaying = false;
+                
             }
             if (!Playing)
             {

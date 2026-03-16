@@ -4,7 +4,7 @@ public class SoundEffectManager : MonoBehaviour
 {
     private static SoundEffectManager Instance;
 
-    private static AudioSource audioSource;
+    public static AudioSource audioSource;
     private static SoundEffectLibrary soundEffectLibrary;
 
 
