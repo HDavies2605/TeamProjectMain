@@ -86,8 +86,10 @@ public class InventoryController : MonoBehaviour
 
     public bool AddItem(GameObject itemPrefab)
     {
+        if (itemPrefab == null) return false;
+
         Item itemToAdd = itemPrefab.GetComponent<Item>();
-        if (itemToAdd == null)
+        if (itemToAdd == null || itemToAdd.itemDataSO == null)
         {
             return false;   //we don't want to add non-item objects to the inventory
         }
@@ -99,13 +101,15 @@ public class InventoryController : MonoBehaviour
             if (slot != null && slot.currentItem != null)
             {
                 Item slotItem = slot.currentItem.GetComponent<Item>();
-                if (slotItem != null && slotItem.ID == itemToAdd.ID)
+
+                // Updated: use itemDataSO instead of ID for stacking
+                if (slotItem != null && slotItem.itemDataSO == itemToAdd.itemDataSO)
                 {
                     //if same item, stack
-                    slotItem.AddToStack();
+                    slotItem.AddToStack(itemToAdd.quantity);
 
                     // also update SO inventoryList
-                    AddItem(slotItem.itemDataSO, 1);
+                    AddItem(slotItem.itemDataSO, itemToAdd.quantity);
 
                     return true;
                 }
@@ -118,12 +122,13 @@ public class InventoryController : MonoBehaviour
             InventorySlot slot = slotTransform.GetComponent<InventorySlot>();
             if (slot != null && slot.currentItem == null)
             {
-                GameObject newItem = Instantiate(itemPrefab, slotTransform);
-                newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-                slot.currentItem = newItem;
+                GameObject newItemObj = Instantiate(itemPrefab, slotTransform);
+                //item always centred
+                newItemObj.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                slot.currentItem = newItemObj;
 
                 // also add to SO inventoryList
-                Item newItemComp = newItem.GetComponent<Item>();
+                Item newItemComp = newItemObj.GetComponent<Item>();
                 if (newItemComp != null)
                 {
                     AddItem(newItemComp.itemDataSO, newItemComp.quantity);
@@ -132,6 +137,7 @@ public class InventoryController : MonoBehaviour
                 return true;
             }
         }
+
         Debug.Log("Inventory is full!");
         return false;
     }
