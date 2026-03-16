@@ -34,7 +34,7 @@ public class BackgroundSound : MonoBehaviour
 
 
 
-        else if (scene == "map2" || scene == "map" || scene == "AidenTestScene")
+        else if (scene == "map2" || scene == "map1" || scene == "AidenTestScene")
         {
 
             if (Battleplaying == true)
