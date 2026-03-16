@@ -32,6 +32,8 @@ public class InventorySelection : MonoBehaviour
         itemNameText.text = item.itemDataSO.itemName;
         itemDescriptionText.text = item.itemDataSO.description;
 
+
+        //if you want to add anything else to the description box, add it here.
         string stats = "";
         if (item.itemDataSO.attackBonus > 0)
             stats += $"Attack: {item.itemDataSO.attackBonus}\n";
