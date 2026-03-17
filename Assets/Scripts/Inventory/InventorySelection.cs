@@ -26,6 +26,7 @@ public class InventorySelection : MonoBehaviour
 
     public void SelectItem(Item item)
     {
+        
         selectedItem = item;
         if (item == null || descriptionBox == null) return;
 
