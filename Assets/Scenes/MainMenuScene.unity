@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2040793533585043189, guid: d7d55fa009b04b1408319890d8cc9dc5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: map1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4164094485515234239, guid: d7d55fa009b04b1408319890d8cc9dc5, type: 3}
       propertyPath: m_fontAsset
