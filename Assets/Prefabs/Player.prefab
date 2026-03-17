@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 1509981210946207482}
   - component: {fileID: 7975681304041138995}
   - component: {fileID: 4850253717913468227}
+  - component: {fileID: 2995264524350097794}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -468,6 +469,7 @@ MonoBehaviour:
   useAcceleration: 0
   acceleration: 25
   deceleration: 35
+  footstepSpeed: 0.5
 --- !u!61 &7975681304041138995
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -526,6 +528,19 @@ SortingGroup:
   m_SortingLayer: 4
   m_SortingOrder: 12
   m_SortAtRoot: 0
+--- !u!114 &2995264524350097794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5361692594112046493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a40225eefa9c79f45ba27b451c875532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testEnemy: {fileID: 11400000, guid: 25722ed6180e8204c809856eff39dbc5, type: 2}
 --- !u!1 &8113193597363778935
 GameObject:
   m_ObjectHideFlags: 0
