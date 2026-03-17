@@ -16,7 +16,7 @@ public class Item : MonoBehaviour, IPointerClickHandler
     private Image itemImage;
     private SpriteRenderer spriteRenderer; // World sprite
 
-    private void Awake()
+    private void Start()
     {
         quantityText = GetComponentInChildren<TMP_Text>();
         itemImage = GetComponent<Image>();

@@ -26,13 +26,14 @@ public class InventoryController : MonoBehaviour
 
     public void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject); // Ensure only one instance exists
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+       
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
