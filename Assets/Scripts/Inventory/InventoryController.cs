@@ -32,6 +32,7 @@ public class InventoryController : MonoBehaviour
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -41,7 +42,7 @@ public class InventoryController : MonoBehaviour
         {
             //getting the Slot game object to populate with items
             InventorySlot slot = Instantiate(slotPrefab, inventoryPage.transform).GetComponent<InventorySlot>();
-
+            DontDestroyOnLoad(slotPrefab);
             if (i < itemPrefabs.Length)
             {
                 //put the item in the slot
