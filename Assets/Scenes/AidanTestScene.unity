@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu_PauseMenuPREFAB
       objectReference: {fileID: 0}
+    - target: {fileID: 6632725491501982902, guid: f544da74929e3a54f9a722eff3e5382c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8807286962400635900, guid: f544da74929e3a54f9a722eff3e5382c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.457006
@@ -348,6 +352,10 @@ PrefabInstance:
     - target: {fileID: 1727663492852871675, guid: e6ecd51690a51a84ba34bfa32b9cb2ba, type: 3}
       propertyPath: m_Name
       value: InventoryCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727663492852871675, guid: e6ecd51690a51a84ba34bfa32b9cb2ba, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2374395245149679304, guid: e6ecd51690a51a84ba34bfa32b9cb2ba, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -17498,6 +17506,10 @@ PrefabInstance:
     - target: {fileID: 4091754021040047859, guid: 48f848b7dfc0873408ddecd500e6f4ef, type: 3}
       propertyPath: m_Name
       value: UserInterfacePREFAB
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091754021040047859, guid: 48f848b7dfc0873408ddecd500e6f4ef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
