@@ -131,9 +131,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenuPrefab Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2028706489947409370, guid: d7d55fa009b04b1408319890d8cc9dc5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -24
+      objectReference: {fileID: 0}
     - target: {fileID: 2040793533585043189, guid: d7d55fa009b04b1408319890d8cc9dc5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233396650947386015, guid: d7d55fa009b04b1408319890d8cc9dc5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894551449666340383, guid: d7d55fa009b04b1408319890d8cc9dc5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 4164094485515234239, guid: d7d55fa009b04b1408319890d8cc9dc5, type: 3}
       propertyPath: m_fontAsset
@@ -151,6 +163,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 6212599830577893917, guid: d7d55fa009b04b1408319890d8cc9dc5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -70.000015
+      objectReference: {fileID: 0}
     - target: {fileID: 6570015964628962633, guid: d7d55fa009b04b1408319890d8cc9dc5, type: 3}
       propertyPath: m_Camera
       value: 
